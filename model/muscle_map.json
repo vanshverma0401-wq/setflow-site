@@ -1,0 +1,266 @@
+{
+ "schema_version": 3,
+ "version": "2026-10-28-v8-regions",
+ "model": "SetFlowBody.usdz",
+ "licence": "CC BY-SA 4.0, see LICENSE-NOTICE.md",
+ "naming": "skin_<group>_<side> (side = the figure's own left/right); neutral: skin_head_center, skin_hand_<side>, skin_foot_<side>",
+ "groups": [
+  "chest",
+  "back",
+  "shoulders",
+  "biceps",
+  "triceps",
+  "forearms",
+  "traps",
+  "neck",
+  "core",
+  "glutes",
+  "quads",
+  "hamstrings",
+  "calves"
+ ],
+ "region_groups": [
+  "chest",
+  "back",
+  "shoulders",
+  "biceps",
+  "triceps",
+  "forearms",
+  "traps",
+  "neck",
+  "core",
+  "glutes",
+  "quads",
+  "hamstrings",
+  "calves",
+  "adductors",
+  "tibialis"
+ ],
+ "folded_groups": {
+  "adductors": "quads",
+  "tibialis": "calves"
+ },
+ "usage": "Tap: the hit node name -> g = skin_regions[name].group; app group = folded_groups[g] if present, else g (g null = neutral region: ignore the tap). THERMAL/heat map: tint every skin region whose app group has data (diffuse + a little emission), so skin_adductors_* take the quads colour and skin_tibialis_* the calves colour. Tone: set diffuse on every skin_* material. When the app gains an adductors or tibialis group, delete its line from folded_groups (and add it to groups if the app reads its group list from this map); the model and node names stay the same.",
+ "skin_regions": {
+  "skin_adductors_left": {
+   "group": "adductors",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over inner thigh (adductors), left"
+  },
+  "skin_adductors_right": {
+   "group": "adductors",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over inner thigh (adductors), right"
+  },
+  "skin_back_left": {
+   "group": "back",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over back, left"
+  },
+  "skin_back_right": {
+   "group": "back",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over back, right"
+  },
+  "skin_biceps_left": {
+   "group": "biceps",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over biceps, left"
+  },
+  "skin_biceps_right": {
+   "group": "biceps",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over biceps, right"
+  },
+  "skin_calves_left": {
+   "group": "calves",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over calves, left"
+  },
+  "skin_calves_right": {
+   "group": "calves",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over calves, right"
+  },
+  "skin_chest_left": {
+   "group": "chest",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over chest, left"
+  },
+  "skin_chest_right": {
+   "group": "chest",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over chest, right"
+  },
+  "skin_core_left": {
+   "group": "core",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over core, left"
+  },
+  "skin_core_right": {
+   "group": "core",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over core, right"
+  },
+  "skin_foot_left": {
+   "group": null,
+   "side": "left",
+   "neutral": true,
+   "display_name": "Skin: foot, left"
+  },
+  "skin_foot_right": {
+   "group": null,
+   "side": "right",
+   "neutral": true,
+   "display_name": "Skin: foot, right"
+  },
+  "skin_forearms_left": {
+   "group": "forearms",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over forearms, left"
+  },
+  "skin_forearms_right": {
+   "group": "forearms",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over forearms, right"
+  },
+  "skin_glutes_left": {
+   "group": "glutes",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over glutes, left"
+  },
+  "skin_glutes_right": {
+   "group": "glutes",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over glutes, right"
+  },
+  "skin_hamstrings_left": {
+   "group": "hamstrings",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over hamstrings, left"
+  },
+  "skin_hamstrings_right": {
+   "group": "hamstrings",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over hamstrings, right"
+  },
+  "skin_hand_left": {
+   "group": null,
+   "side": "left",
+   "neutral": true,
+   "display_name": "Skin: hand, left"
+  },
+  "skin_hand_right": {
+   "group": null,
+   "side": "right",
+   "neutral": true,
+   "display_name": "Skin: hand, right"
+  },
+  "skin_head_center": {
+   "group": null,
+   "side": "center",
+   "neutral": true,
+   "display_name": "Skin: head"
+  },
+  "skin_neck_left": {
+   "group": "neck",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over neck, left"
+  },
+  "skin_neck_right": {
+   "group": "neck",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over neck, right"
+  },
+  "skin_quads_left": {
+   "group": "quads",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over quads, left"
+  },
+  "skin_quads_right": {
+   "group": "quads",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over quads, right"
+  },
+  "skin_shoulders_left": {
+   "group": "shoulders",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over shoulders, left"
+  },
+  "skin_shoulders_right": {
+   "group": "shoulders",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over shoulders, right"
+  },
+  "skin_tibialis_left": {
+   "group": "tibialis",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over front of shin (tibialis), left"
+  },
+  "skin_tibialis_right": {
+   "group": "tibialis",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over front of shin (tibialis), right"
+  },
+  "skin_traps_left": {
+   "group": "traps",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over traps, left"
+  },
+  "skin_traps_right": {
+   "group": "traps",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over traps, right"
+  },
+  "skin_triceps_left": {
+   "group": "triceps",
+   "side": "left",
+   "neutral": false,
+   "display_name": "Skin over triceps, left"
+  },
+  "skin_triceps_right": {
+   "group": "triceps",
+   "side": "right",
+   "neutral": false,
+   "display_name": "Skin over triceps, right"
+  }
+ },
+ "tones": {
+  "light": "#E9C3A6",
+  "medium": "#C48E69",
+  "dark": "#6E4632"
+ },
+ "default_tone": "medium",
+ "anatomy": {
+  "file": "SetFlowAnatomy.usdz",
+  "map": "anatomy_map.json"
+ }
+}
