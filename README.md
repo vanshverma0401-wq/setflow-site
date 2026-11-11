@@ -5,7 +5,15 @@ to read the privacy policy, find support and inspect third-party model credits.
 Its shared navigation, readable typography and light/dark styling keep the
 supporting documentation consistent across pages.
 
-[Home source](index.html) · [Privacy policy](privacy.html) · [Support](support.html) · [Shared stylesheet](style.css)
+[Open the live documentation site](https://vanshverma0401-wq.github.io/setflow-site/) · [Live privacy policy](https://vanshverma0401-wq.github.io/setflow-site/privacy.html) · [Live support](https://vanshverma0401-wq.github.io/setflow-site/support.html)
+
+![Published SetFlow documentation homepage](assets/site-preview.jpg)
+
+*Actual GitHub Pages homepage, captured November 10, 2026. This is the supporting
+documentation website; the native iPhone app remains in development. The home,
+privacy, support and model-attribution pages were opened during this review.*
+
+[Home source](index.html) · [Privacy source](privacy.html) · [Support source](support.html) · [Shared stylesheet](style.css)
 
 ## Page map
 
@@ -35,8 +43,15 @@ the page source in GitHub.*
 
 ## View and maintain
 
-The repository uses plain HTML/CSS without a build step. Open `index.html`
-locally to inspect the site, or use a local static server when testing changes.
+The repository uses plain HTML/CSS without a build step. The public deployment
+uses GitHub Pages from the root of `main`. Open `index.html` locally to inspect
+the site, or use a local static server when testing changes:
+
+```bash
+python3 -m http.server 8000 --bind 127.0.0.1
+```
+
+Then visit `http://127.0.0.1:8000/`. Stop the local server when finished.
 The privacy, support and attribution pages share the same stylesheet.
 
 The native iPhone app remains in development. For product workflows, dated
